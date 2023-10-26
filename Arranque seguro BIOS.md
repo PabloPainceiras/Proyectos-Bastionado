@@ -1,13 +1,4 @@
-author: Pablo Painceiras Martinez
-summary: En este codelab quedan expuestos diferentes mecanismos de protección de BIOS/UEFI.
-id: BIOS/UEFI
-categories: codelab,markdown,BIOS,cybersecurity
-environments: Web
-status: Published
-feedback link:
-analytics account: ID de Google Analytics
-
-## Proyecto-1.1-Bationado
+# Proyecto-1.1-Bationado
 
 En este proyecto vamos a describir como hacer una configuración segura de la BIOS/UEFI de un portátil HP.
 
