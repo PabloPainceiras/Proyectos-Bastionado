@@ -21,7 +21,7 @@ Para entrar en la BIOS del propio ordenador introducimos el siguiente comando en
 
 shutdown /r /fw /t 0  
 
-![Untitled](imgbios/comandopng)
+![Untitled](imgbios/comando.png)
 
 Una vez al entrar en el menú principal de la BIOS presionamos la tecla F10 para entrar en la BIOS Setup
 
