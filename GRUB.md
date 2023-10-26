@@ -1,8 +1,19 @@
+author: Pablo Painceiras Martinez
+summary: En este codelab quedan expuestos diferentes mecanismos de protección de BIOS/UEFI.
+id: GRUB
+categories: codelab,markdown,BIOS,cybersecurity
+environments: Web
+status: Published
+feedback link:
+analytics account: ID de Google Analytics
 # Proyecto 1.2 Bastionado
+
+## Introducción
+Duration 0:02:00
 
 En este proyecto vamos a describir como hacer una configuración segura del GRUB en una maquina virtual Debian 12 alojada en VMWare.
 
-¿Que es GRUB?
+### ¿Que es GRUB?
 
 GRUB (GRand Unified Bootloader) es un gestor de arranque utilizado principalmente por sistemas operativos basados en Linux. Es el software que se ejecuta justo después de que la computadora se enciende y antes de que el sistema operativo se inicie. GRUB permite al usuario elegir entre diferentes sistemas operativos instalados en la misma máquina, así como diferentes versiones de un mismo sistema operativo.
 
@@ -14,6 +25,9 @@ Lo primero abrimos la terminal del sistema.
 
 Luego introducimos el comando “su -” , para tener permisos de administrador 
 
+
+## Ocultación Menu
+Duration 0:08:00
 Lo primero que vamos a hacer es ocultar el menú de GRUB 2
 
 Para ello abrimos el fichero “/grub” con el comando “nano /etc/default/grub”, a continuación
@@ -29,6 +43,9 @@ Una vez realizado, guardamos el archivo y salimos del editor de texto.
 Una vez fuera, realizamos un “update-grub” para actualizarlo
 
 ![Untitled](imggrub/update.png)
+
+## Protección de arranque con contraseña
+Duration 0:10:00
 
 Pasamos a proteger el arranque con contraseña.
 
@@ -56,6 +73,9 @@ Guardaríamos los cambios y haremos de nuevo un update
 
 ![Untitled](imggrub/update.png)
 
+## Copia de seguridad
+Duration 0:04:00
+
 A continuación crearemos una copia de seguridad del arranque.
 
 La haremos de los archivos: 
@@ -74,6 +94,9 @@ La haremos de los archivos:
 
 ![Untitled](imggrub/carpeta.png)
 
+## Permisos sobre el arranque
+Duration 0:05:00
+
 A continuación veremos como cambiaremos los permisos al fichero “/etc/grub.d” para que solo pueda leerlos el usuario *root* 
 
 Para ello vamos a situarnos en el directorio /etc/grub.d
@@ -90,6 +113,8 @@ Después del chmod:
 
 ![Untitled](imggrub/chmod3.png)
 
+## Para Terminar
+Duration 0:02:00
 Por último reiniciaremos el sistema. 
 
 Nos aparecerá la siguiente pantalla en donde tenemos que introducir el super usuario y la contraseña anteriormente cifrada
