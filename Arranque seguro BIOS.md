@@ -1,4 +1,4 @@
-# Proyecto-1.1-Bationado
+# Proyecto 1.1 Bationado
 
 En este proyecto vamos a describir como hacer una configuración segura de la BIOS/UEFI de un portátil HP.
 
