@@ -25,7 +25,7 @@ shutdown /r /fw /t 0
 
 Una vez al entrar en el menú principal de la BIOS presionamos la tecla F10 para entrar en la BIOS Setup
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e58b3df3-5cd1-4e89-bb15-cbc24ac40878/aaeb598d-af24-412f-864c-f28164981919/Untitled.png)
+![Untitled](imgbios/menu bios.png)
 
 Una vez entrado, nos movemos a la sección de “Security”, en donde podemos encontrar la contraseña del administrador (Administrator Password) y del arranque (Power-On Password).
 
