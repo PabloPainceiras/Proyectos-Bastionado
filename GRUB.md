@@ -1,12 +1,3 @@
-author: Pablo Painceiras Martinez
-summary: En este codelab quedan expuestos diferentes mecanismos de protección de BIOS/UEFI.
-id: BIOS/UEFI
-categories: codelab,markdown,BIOS,cybersecurity
-environments: Web
-status: Published
-feedback link:
-analytics account: ID de Google Analytics
-
 # Proyecto 1.2 Bastionado
 
 En este proyecto vamos a describir como hacer una configuración segura del GRUB en una maquina virtual Debian 12 alojada en VMWare.
