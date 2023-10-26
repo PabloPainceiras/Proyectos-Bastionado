@@ -1,0 +1,94 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Proyecto 1.1 Bationado</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid="ID de Google Analytics"
+                  id="BIOS"
+                  title="Proyecto 1.1 Bationado"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción" duration="0">
+        <p>Duration 0:02:00</p>
+<p>En este proyecto vamos a describir como hacer una configuración segura de la BIOS/UEFI de un portátil HP.</p>
+<h2 is-upgraded>¿Qué es la BIOS?</h2>
+<p>La BIOS (Basic Input/Output System, o Sistema Básico de Entrada/Salida) es un software que se ejecuta en un chip ubicado en la placa madre de una computadora. Es el primer software que se ejecuta al encender la máquina y su principal función es iniciar y probar el hardware del sistema, como el procesador, la memoria RAM, el disco duro, la tarjeta de vídeo, entre otros.</p>
+<h2 is-upgraded>Como Acceder a la Configuración de la BIOS</h2>
+<p>Antes de empezar tendremos que saber como entrar el la BIOS.</p>
+<p>Para entrar en la BIOS del propio ordenador introducimos el siguiente comando en Windows Powershell en modo administrador. Esto reinicia el ordenador y al arrancar te introduce en la BIOS</p>
+<p>shutdown /r /fw /t 0</p>
+<p class="image-container"><img alt="Untitled" src="img\\5f0e7e30b4c287c3.png"></p>
+<p>Una vez al entrar en el menú principal de la BIOS presionamos la tecla F10 para entrar en la BIOS Setup</p>
+<p class="image-container"><img alt="Untitled" src="img\\7224e8d843d3eddd.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración Contraseñas" duration="0">
+        <p>Duration 0:3:00</p>
+<p>Una vez entrado, nos movemos a la sección de &#34;Security&#34;, en donde podemos encontrar la contraseña del administrador (Administrator Password) y del arranque (Power-On Password).</p>
+<p class="image-container"><img alt="Untitled" src="img\\66f1686ae8116a66.png"></p>
+<p>Nos situamos donde pone &#34;Clear&#34; en cada uno de los dos, unas vez encima, pulsamos &#34;ENTER&#34; y ponemos una contraseña.</p>
+<p class="image-container"><img alt="Untitled" src="img\\7fe1d8f962acafa1.png"></p>
+<ul>
+<li>La contraseña de administrador se utiliza para restringir el acceso a la configuración y funciones avanzadas de la BIOS de una computadora.</li>
+<li>La contraseña del power-on se utiliza principalmente para proteger el acceso al sistema operativo desde el momento en que se inicia la computadora.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración Boot" duration="0">
+        <p>Duration 0:3:00</p>
+<p>Luego nos movemos a &#34;Boot Options&#34;, en donde podemos encontrar las opciones de arranque.</p>
+<p>Nos fijaremos en USB Boot, la cual deshabilitaremos para impedir que el sistema pueda hacer el arranque a través de un USB o dispositivo de memoria externa.</p>
+<p>Por otro lado, en este caso ya esta deshabilitada la opción de arranque por una red, pero si esta activa la desactivaríamos</p>
+<p class="image-container"><img alt="Untitled" src="img\\cfdde1a688b6b5f1.png"></p>
+<p>Una vez realizado las acciones anteriores se quedaran de la siguiente forma.</p>
+<p>El orden de prioridades solo tendrá un tipo de arranque, ya que los demás están inactivos</p>
+<p class="image-container"><img alt="Untitled" src="img\\a9cc66c067d1fbea.png"></p>
+<p>A continuación, habilitaremos el Secure Boot. De normal esta inaccesible, para poder acceder a él tendremos que restaurar las HP Factory Default Keys.</p>
+<p>Una vez restauradas nos permitirá acceder al Secure Boot, el cual habilitaremos. Esto garantizar que el sistema arranque únicamente utilizando software que sea considerado confiable.</p>
+<p class="image-container"><img alt="Untitled" src="img\\ccef0c2d2b0264a6.png"></p>
+<p class="image-container"><img alt="Untitled" src="img\\21a006ec4f16a2b0.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuracion Extra" duration="0">
+        <p>Duration 0:2:00</p>
+<p>A continuación volveremos a la pestaña &#34;Security&#34; en donde habilitaremos el TPM, esto nos proporcionara múltiples capacidades relacionadas con la seguridad, y su propósito es mejorar la integridad y la seguridad de un sistema informático. Para ello habilitaremos el TPM Device y el TPM State.</p>
+<p class="image-container"><img alt="Untitled" src="img\\9bb4b430ec521f1a.png"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

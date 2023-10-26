@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2023-10-26T18:57:42+02:00",
+  "id": "GRUB",
+  "duration": 0,
+  "title": "Proyecto 1.2 Bastionado",
+  "summary": "En este codelab quedan expuestos diferentes mecanismos de protección de BIOS/UEFI.",
+  "source": "GRUB.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown",
+    "bios",
+    "cybersecurity"
+  ],
+  "tags": [
+    "web"
+  ],
+  "ga": "ID de Google Analytics",
+  "url": "GRUB"
+}
